@@ -2,19 +2,8 @@
 
 Portafolio personal construido con Next.js (tema oscuro/claro) para mostrar tu enfoque en ciencia de datos, machine learning, analítica y visualización. Incluye secciones de “Sobre mí”, “Proyectos Personales” y “Contacto”.
 
-## Cómo ejecutar
 
-1. Instalar dependencias:
-   ```bash
-   npm install
-   ```
-
-2. Ejecutar en desarrollo:
-   ```bash
-   npm run dev
-   ```
-
-3. Abrir [http://localhost:3000](http://localhost:3000)
+1. Abrir [http://localhost:3000](http://localhost:3000)
 
 ## Deploy en Vercel
 
