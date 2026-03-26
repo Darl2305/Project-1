@@ -1,3 +1,5 @@
+ "use client";
+
 const links = [
   {
     name: "GitHub",
@@ -33,10 +35,10 @@ export default function Contact() {
     <section id="contacts" className="py-20 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-[var(--text-primary)] mb-4">
-          Contact
+          Contacto
         </h2>
         <p className="text-[var(--text-secondary)] mb-12">
-          Connect with me through these platforms
+          Conversemos a través de estas plataformas
         </p>
         <div className="flex flex-wrap justify-center gap-8">
           {links.map((link) => (

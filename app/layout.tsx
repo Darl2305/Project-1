@@ -3,8 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "David Roca | Portfolio",
-  description: "Personal portfolio - Data Science and Machine Learning",
+  title: "David Adrian Roca Limache | Portafolio",
+  description: "Portafolio personal de ciencia de datos y machine learning",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{

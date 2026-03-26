@@ -1,48 +1,98 @@
-export default function About() {
-  const skills = [
-    "Build ML models that extract value from real-world data.",
-    "Visualize data in clear, actionable ways.",
-    "Collaborate with teams to define metrics and goals.",
-    "Document processes and results for reproducibility.",
-  ];
+"use client";
 
+export default function About() {
   return (
     <section id="about" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-[var(--text-primary)] text-center mb-16">
-          About me
+          Sobre mí
         </h2>
-        <div className="grid md:grid-cols-2 gap-12">
+
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-lg text-[var(--color-accent)] leading-relaxed">
-              I have experience in data science, building solutions with Machine Learning
-              and exploratory analysis. I focus on end-to-end projects: from exploration
-              to model implementation in production.
+              Trabajo en la intersección entre ciencia de datos y resultados aplicables. Diseño soluciones de punta a punta con machine learning, desde el análisis exploratorio y la comprensión de variables hasta una implementación confiable.
             </p>
-          </div>
-          <div>
-            <p className="text-[var(--text-secondary)] mb-6 leading-relaxed">
-              In Data, it&apos;s essential to have a broad skill set: programming, statistics,
-              visualization, and communication. I work to ensure every project meets the
-              highest standards of quality.
+            <p className="text-[var(--text-secondary)] mt-6 leading-relaxed">
+              Para mí, la claridad es tan importante como la precisión. Defino métricas de éxito, comunico hallazgos con lenguaje directo y documento el proceso para que los resultados sean reproducibles y consistentes. Además, aprendo rápido y me adapto cuando cambian los requerimientos.
             </p>
-            <ul className="space-y-3 mb-6">
-              {skills.map((skill) => (
-                <li key={skill} className="flex gap-3 items-start">
-                  <span className="text-[var(--color-accent)] mt-1">•</span>
-                  <span className="text-[var(--text-primary)]">{skill}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="text-[var(--text-secondary)] mb-8">
-              The work I deliver is reproducible, documented, and built to scale.
-            </p>
+
+            <div className="mt-10 p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
+              <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-3">
+                Formación y Educación
+              </h3>
+              <p className="text-[var(--text-secondary)] mb-2 leading-relaxed">
+                Ingeniería de Sistemas de Información — Universidad Peruana de Ciencias Aplicadas (UPC)
+              </p>
+              <p className="text-[var(--text-secondary)] leading-relaxed">
+                Formación complementaria — DMC PERU: Machine Learning, Power BI, SQL for BI
+              </p>
+            </div>
+
             <a
               href="#contacts"
-              className="inline-block px-6 py-3 border border-[var(--text-primary)] text-[var(--text-primary)] font-medium rounded-lg hover:bg-black/5 transition-colors"
+              className="inline-block mt-8 px-6 py-3 border border-[var(--text-primary)] text-[var(--text-primary)] font-medium rounded-lg hover:bg-black/5 transition-colors"
             >
-              LEARN MORE ABOUT ME
+              CONOCE MÁS SOBRE MÍ
             </a>
+          </div>
+
+          <div className="space-y-8">
+            <div className="p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
+              <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">
+                Habilidades técnicas
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Python para análisis y modelado</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">SQL / SQL Server para transformar y consultar datos</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Power BI para tableros e insights accionables</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Machine learning para evaluación y soporte a decisiones</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Apps en Streamlit para compartir resultados con interesados</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
+              <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-4">
+                Habilidades blandas
+              </h3>
+              <ul className="space-y-3">
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Pensamiento crítico para validar supuestos</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Aprendizaje rápido para dominar herramientas y dominios</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Comunicación efectiva de ideas complejas</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Alfabetización en IA para un uso responsable</span>
+                </li>
+                <li className="flex gap-3 items-start">
+                  <span className="text-[var(--color-accent)] mt-1">•</span>
+                  <span className="text-[var(--text-primary)]">Adaptabilidad ante condiciones cambiantes del proyecto</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
