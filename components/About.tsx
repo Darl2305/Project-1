@@ -11,10 +11,10 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-lg text-[var(--color-accent)] leading-relaxed">
-              Trabajo en la intersección entre ciencia de datos y resultados aplicables. Diseño soluciones de punta a punta con machine learning, desde el análisis exploratorio y la comprensión de variables hasta una implementación confiable.
+              En mis proyectos busco aplicar ciencia de datos para responder problemas reales y mejorar la toma de decisiones. Trabajo con análisis exploratorio, limpieza de datos, visualización y machine learning para obtener resultados claros y accionables.
             </p>
             <p className="text-[var(--text-secondary)] mt-6 leading-relaxed">
-              Para mí, la claridad es tan importante como la precisión. Defino métricas de éxito, comunico hallazgos con lenguaje directo y documento el proceso para que los resultados sean reproducibles y consistentes. Además, aprendo rápido y me adapto cuando cambian los requerimientos.
+              Valoro la claridad como base de cualquier análisis. Defino criterios de éxito, comunico hallazgos con un enfoque práctico y documento el proceso para que los resultados sean reproducibles. Me caracterizo por aprender rápido y adaptarme cuando aparecen nuevos requerimientos.
             </p>
 
             <div className="mt-10 p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
