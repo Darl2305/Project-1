@@ -11,12 +11,8 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <p className="text-lg text-[var(--color-accent)] leading-relaxed">
-              En mis proyectos busco aplicar ciencia de datos para responder problemas reales y mejorar la toma de decisiones. Trabajo con análisis exploratorio, limpieza de datos, visualización y machine learning para obtener resultados claros y accionables.
+            Estudiante de Ingeniería de Sistemas con experiencia en análisis de datos, visualización e implementación de modelos de machine learning. Domino SQL, Python y Power BI, y he aplicado esas herramientas en proyectos reales de predicción. Busco sumar valor a organizaciones que toman decisiones basadas en datos.
             </p>
-            <p className="text-[var(--text-secondary)] mt-6 leading-relaxed">
-              Valoro la claridad como base de cualquier análisis. Defino criterios de éxito, comunico hallazgos con un enfoque práctico y documento el proceso para que los resultados sean reproducibles. Me caracterizo por aprender rápido y adaptarme cuando aparecen nuevos requerimientos.
-            </p>
-
             <div className="mt-10 p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)]">
               <h3 className="text-xl font-semibold text-[var(--text-primary)] mb-3">
                 Formación y Educación
