@@ -16,14 +16,18 @@ const FRAUD_DASHBOARD_URL =
   "https://app.powerbi.com/view?r=eyJrIjoiNDUzNzk2MjctMWQyMi00YWU5LWE1ZGEtYTY2OTBlMWNkYWVlIiwidCI6IjBlMGNiMDYwLTA5YWQtNDlmNS1hMDA1LTY4YjliNDlhYTFmNiIsImMiOjR9";
 const FRAUD_MODEL_URL = "/modelo-semantico.png";
 
+// Carpeta con los scripts de SQL Server (T-SQL) en el repo del proyecto.
+const FRAUD_SQL_URL =
+  "https://github.com/Darl2305/Bank-transaction-fraud/tree/main/sql";
+
 const fraudProject = {
   title: "Detección de fraude bancario",
   description:
-    "Modelo de machine learning que estima la probabilidad de fraude de cada transacción, entrenado con 1 millón de transacciones (2020-2024) siguiendo CRISP-DM. En la app se puede evaluar una transacción individual o subir un lote en CSV, y el dashboard de Power BI resume el fraude por año, comercio, hora y método de pago.",
+    "Modelo de machine learning que estima la probabilidad de fraude de cada transacción, entrenado con 1 millón de transacciones (2020-2024) siguiendo CRISP-DM. En la app se puede evaluar una transacción individual, subir un lote en CSV o consultar los datos con SQL. El dashboard de Power BI resume el fraude por año, comercio, hora y método de pago, y la base en SQL Server (modelo en estrella y consultas en T-SQL) respalda esas consultas.",
   result:
     "Revisando el 10 % de transacciones de mayor riesgo se captura el 27 % de los fraudes (ROC-AUC 0.73, medido en 2024 con datos que el modelo no vio).",
   note: "Dataset sintético de Kaggle.",
-  tags: ["Python", "LightGBM", "Streamlit", "Power BI", "DAX", "CRISP-DM"],
+  tags: ["Python", "LightGBM", "Streamlit", "SQL Server", "T-SQL", "Power BI", "DAX", "CRISP-DM"],
 };
 
 const placeholders = [2, 3];
@@ -94,6 +98,17 @@ export default function PersonalProjects() {
                 className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-[var(--border-subtle)] text-[var(--text-primary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
               >
                 Modelo semántico
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <a
+                href={FRAUD_SQL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-lg border border-[var(--border-subtle)] text-[var(--text-primary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
+              >
+                SQL
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
